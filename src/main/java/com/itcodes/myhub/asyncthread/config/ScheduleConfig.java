@@ -55,7 +55,7 @@ public class ScheduleConfig implements SchedulingConfigurer, AsyncConfigurer {
     }
 
     /**
-     * 异步任务异常处理
+     * 异步线程 异常处理
      *
      * @return
      */
