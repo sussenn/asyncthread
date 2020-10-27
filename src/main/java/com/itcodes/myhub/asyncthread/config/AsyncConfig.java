@@ -26,7 +26,7 @@ public class AsyncConfig {
     public Executor myAsyncc() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(5);//核心线程数
-        executor.setMaxPoolSize(10);//最大线程数
+        executor.setMaxPoolSize(10);//最大线程数     cpu核数/(1-0.8)//cup核数*2//cup核数+1
         //传参正值使用无界LinkedBlockingQueue
         //其他传参使用不缓存SynchronousQueue
         executor.setQueueCapacity(20);//队列长度(超过队列长度无法存储,则开启最大线程数)
